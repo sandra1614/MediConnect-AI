@@ -845,3 +845,201 @@ a {
   }
 }
 
+/* =================================
+   HOSPITAL PORTAL DESIGN
+================================= */
+
+.hospital-portal {
+  background:
+    radial-gradient(circle at 0% 0%, #e0eaff 0, transparent 32%),
+    linear-gradient(135deg, #f8f9ff, #f2f0ff);
+}
+
+.portal-layout {
+  display: grid;
+  grid-template-columns: 0.9fr 1.1fr;
+  gap: 35px;
+  align-items: stretch;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.portal-info {
+  padding: 35px;
+  border-radius: 22px;
+  color: white;
+  background: linear-gradient(145deg, #2468ed, #6547d6 70%, #8959df);
+  box-shadow: 0 20px 45px #4b55b82b;
+}
+
+.portal-icon {
+  display: grid;
+  place-items: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 18px;
+  color: white;
+  background: #ffffff25;
+  border: 1px solid #ffffff40;
+  font-size: 30px;
+}
+
+.portal-info h3 {
+  margin-top: 27px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 26px;
+  line-height: 1.35;
+}
+
+.portal-info > p {
+  margin-top: 13px;
+  color: #e2e9ff;
+  font-size: 14px;
+  line-height: 1.9;
+}
+
+.portal-feature {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 21px;
+  color: #ffffff;
+  font-size: 13px;
+}
+
+.portal-feature span {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  color: #14794e;
+  background: #c7ffe2;
+  font-weight: 800;
+}
+
+.portal-info .portal-note {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #ffffff35;
+  font-size: 11px;
+}
+
+.portal-form-card {
+  padding: 32px;
+  border: 1px solid #e5e9f7;
+  border-radius: 22px;
+  background: white;
+  box-shadow: 0 15px 40px #263b710d;
+}
+
+.portal-form-card h3 {
+  font-family: 'Manrope', sans-serif;
+  font-size: 23px;
+  color: #1c3158;
+}
+
+.form-description {
+  margin-top: 7px;
+  margin-bottom: 25px;
+  color: #758198;
+  font-size: 13px;
+}
+
+#hospitalSetupForm {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#hospitalSetupForm label {
+  margin-top: 7px;
+  color: #374663;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+#hospitalSetupForm input,
+#hospitalSetupForm select {
+  width: 100%;
+  min-height: 47px;
+  padding: 12px 14px;
+  border: 1px solid #dfe5f1;
+  border-radius: 10px;
+  outline: none;
+  color: #263653;
+  background: #fbfcff;
+  font-size: 13px;
+}
+
+#hospitalSetupForm input:focus,
+#hospitalSetupForm select:focus {
+  border-color: #5c78ed;
+  box-shadow: 0 0 0 3px #5c78ed18;
+}
+
+.portal-submit {
+  margin-top: 18px;
+  padding: 14px 18px;
+  border: none;
+  border-radius: 11px;
+  color: white;
+  background: linear-gradient(135deg, #2864e8, #7654e8);
+  box-shadow: 0 7px 18px #2864e824;
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 13px;
+  transition: transform 0.2s;
+}
+
+.portal-submit:hover {
+  transform: translateY(-2px);
+}
+
+.hospital-result {
+  margin-top: 22px;
+  padding: 20px;
+  border: 1px solid #c9f0db;
+  border-radius: 13px;
+  background: linear-gradient(135deg, #f0fff6, #f0f7ff);
+  overflow-wrap: anywhere;
+}
+
+.hospital-result h4 {
+  margin-bottom: 12px;
+  color: #16834a;
+  font-size: 16px;
+}
+
+.hospital-result p {
+  margin-top: 8px;
+  color: #40516c;
+  font-size: 12px;
+  line-height: 1.7;
+}
+
+.hospital-result .preview-note {
+  margin-top: 15px;
+  padding-top: 12px;
+  border-top: 1px solid #d8eee1;
+  color: #8b5a13;
+  font-weight: 600;
+}
+
+@media (max-width: 760px) {
+  .portal-layout {
+    grid-template-columns: 1fr;
+    gap: 22px;
+  }
+
+  .portal-info,
+  .portal-form-card {
+    padding: 25px;
+  }
+
+  .portal-info h3 {
+    font-size: 23px;
+  }
+}
+
