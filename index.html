@@ -145,6 +145,96 @@
         </article>
       </div>
     </section>
+    
+    <!-- HOSPITAL PORTAL -->
+    <section class="hospital-portal section" id="hospital-portal">
+      <div class="section-heading">
+        <span class="eyebrow">FOR HEALTHCARE PROVIDERS</span>
+        <h2>Your hospital. Your workspace.</h2>
+        <p>
+          Start setting up your hospital profile for the MediConnect AI
+          platform.
+        </p>
+      </div>
+
+      <div class="portal-layout">
+        <div class="portal-info">
+          <div class="portal-icon">✚</div>
+          <h3>Welcome to your hospital portal</h3>
+          <p>
+            Each hospital will have its own account, contact details,
+            service information and staff access.
+          </p>
+
+          <div class="portal-feature">
+            <span>✓</span> Hospital profile management
+          </div>
+          <div class="portal-feature">
+            <span>✓</span> Patient enquiries and appointments
+          </div>
+          <div class="portal-feature">
+            <span>✓</span> Call management tools
+          </div>
+
+          <p class="portal-note">
+            Account registration and secure sign-in will be connected
+            in a later development step.
+          </p>
+        </div>
+
+        <div class="portal-form-card">
+          <h3>Hospital profile setup</h3>
+          <p class="form-description">
+            Enter sample details to preview your hospital profile.
+          </p>
+
+          <form id="hospitalSetupForm">
+            <label for="hospitalName">Hospital name</label>
+            <input
+              type="text"
+              id="hospitalName"
+              placeholder="e.g. Sunrise Medical Centre"
+              required
+            >
+
+            <label for="hospitalEmail">Official contact email</label>
+            <input
+              type="email"
+              id="hospitalEmail"
+              placeholder="admin@example.com"
+              required
+            >
+
+            <label for="hospitalPhone">Hospital phone number</label>
+            <input
+              type="tel"
+              id="hospitalPhone"
+              placeholder="Enter hospital phone number"
+              required
+            >
+
+            <label for="hospitalType">Type of facility</label>
+            <select id="hospitalType" required>
+              <option value="">Choose facility type</option>
+              <option value="General Hospital">General Hospital</option>
+              <option value="Specialist Hospital">Specialist Hospital</option>
+              <option value="Private Clinic">Private Clinic</option>
+              <option value="Teaching Hospital">Teaching Hospital</option>
+              <option value="Other Healthcare Facility">
+                Other Healthcare Facility
+              </option>
+            </select>
+
+            <button type="submit" class="portal-submit">
+              Preview Hospital Profile →
+            </button>
+          </form>
+
+          <div id="hospitalProfileResult" class="hospital-result" hidden></div>
+        </div>
+      </div>
+    </section>
+    <!-- END HOSPITAL PORTAL -->
 
     <section class="patient-section section" id="patient-chat">
       <div class="patient-intro">
