@@ -1,1 +1,248 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MediConnect AI | Hospital Assistant</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="navbar">
+    <a href="#" class="logo">
+      <span class="logo-icon">✚</span>
+      MediConnect <span class="logo-ai">AI</span>
+    </a>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#services">Services</a>
+      <a href="#dashboard">Dashboard</a>
+    </nav>
+
+    <a href="#patient-chat" class="nav-button">Patient Assistant ↗</a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <span class="eyebrow">✦ SMARTER HEALTHCARE, AVAILABLE 24/7</span>
+
+        <h1>
+          Better care.<br>
+          <span>Every hour.</span><br>
+          Every patient.
+        </h1>
+
+        <p>
+          Meet the intelligent hospital assistant that helps
+          healthcare teams answer patient questions, manage
+          appointments and connect people to the right care.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#patient-chat" class="primary-button">
+            Try Patient Assistant →
+          </a>
+          <a href="#services" class="secondary-button">
+            Explore Services
+          </a>
+        </div>
+
+        <div class="trust-note">
+          <span>●</span>
+          Designed for safer, more accessible healthcare
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <div class="floating-tag tag-top">✦ Available 24/7</div>
+
+        <div class="medical-card">
+          <div class="medical-icon">✚</div>
+          <p class="small-label">YOUR HEALTHCARE PARTNER</p>
+          <h2>Care that<br>never clocks out.</h2>
+          <p class="medical-description">
+            Helping patients find information and the right next step.
+          </p>
+
+          <div class="availability">
+            <span class="status-dot"></span>
+            Assistant demonstration
+          </div>
+
+          <div class="medical-decoration decoration-one"></div>
+          <div class="medical-decoration decoration-two"></div>
+        </div>
+
+        <div class="floating-tag tag-bottom">♡ Patient-first support</div>
+      </div>
+    </section>
+
+    <section class="stats" id="dashboard">
+      <div class="stat-item">
+        <h2>24/7</h2>
+        <p>Always-on assistance goal</p>
+      </div>
+      <div class="stat-item">
+        <h2>1</h2>
+        <p>Connected care experience</p>
+      </div>
+      <div class="stat-item">
+        <h2>∞</h2>
+        <p>Room to grow with hospitals</p>
+      </div>
+    </section>
+
+    <section class="services section" id="services">
+      <div class="section-heading">
+        <span class="eyebrow">WHAT WE DO</span>
+        <h2>More support for every patient.</h2>
+        <p>One platform, designed around hospital and patient needs.</p>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card service-blue">
+          <div class="service-icon">☎</div>
+          <h3>Call Assistance</h3>
+          <p>
+            A future voice assistant will help answer hospital calls
+            and route patients to the right team.
+          </p>
+          <span class="service-link">Voice integration planned →</span>
+        </article>
+
+        <article class="service-card service-purple">
+          <div class="service-icon">✉</div>
+          <h3>Patient Chat</h3>
+          <p>
+            Help patients find general health information and
+            understand their next steps.
+          </p>
+          <a href="#patient-chat" class="service-link">Try the demo ↓</a>
+        </article>
+
+        <article class="service-card service-green">
+          <div class="service-icon">▦</div>
+          <h3>Appointments</h3>
+          <p>
+            Make it easier for patients to request appointments
+            and reach hospital staff.
+          </p>
+          <span class="service-link">Booking feature planned →</span>
+        </article>
+
+        <article class="service-card service-orange">
+          <div class="service-icon">♧</div>
+          <h3>Care Navigation</h3>
+          <p>
+            Help patients find the appropriate care team and
+            recognize when urgent help may be needed.
+          </p>
+          <span class="service-link">Safety comes first →</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="patient-section section" id="patient-chat">
+      <div class="patient-intro">
+        <span class="eyebrow">MEET YOUR PATIENT ASSISTANT</span>
+        <h2>Questions don't keep office hours.</h2>
+        <p>
+          Explore a sample conversation with MediConnect AI.
+          This first version is a demonstration, not a live medical
+          service. It does not diagnose or prescribe medication.
+        </p>
+
+        <div class="patient-benefit">
+          <span>✓</span>
+          General hospital information
+        </div>
+        <div class="patient-benefit">
+          <span>✓</span>
+          Guidance on contacting a care team
+        </div>
+        <div class="patient-benefit">
+          <span>✓</span>
+          Clear emergency safety reminders
+        </div>
+      </div>
+
+      <div class="chat-card">
+        <div class="chat-header">
+          <div class="chat-avatar">✚</div>
+          <div>
+            <h3>MediConnect Assistant</h3>
+            <p><span class="status-dot"></span> Demo mode</p>
+          </div>
+          <span class="chat-menu">•••</span>
+        </div>
+
+        <div class="chat-messages" id="chatMessages">
+          <div class="message assistant-message">
+            Hello! 👋 Welcome to MediConnect AI. I can demonstrate
+            how a hospital assistant might help with general
+            information and finding the right care team.
+            <br><br>
+            What would you like help with?
+          </div>
+        </div>
+
+        <div class="quick-questions">
+          <button type="button" class="quick-question"
+            data-question="How do I book an appointment?">
+            Book an appointment
+          </button>
+          <button type="button" class="quick-question"
+            data-question="What should I do in a medical emergency?">
+            Emergency help
+          </button>
+          <button type="button" class="quick-question"
+            data-question="How can I contact a doctor?">
+            Contact a doctor
+          </button>
+        </div>
+
+        <form class="chat-form" id="chatForm">
+          <input
+            type="text"
+            id="chatInput"
+            placeholder="Type your question..."
+            aria-label="Type your question"
+            autocomplete="off"
+            required
+          >
+          <button type="submit" aria-label="Send message">➤</button>
+        </form>
+
+        <p class="chat-disclaimer">
+          Demo only · Not for diagnosis or treatment
+        </p>
+      </div>
+    </section>
+
+    <section class="cta-section">
+      <span class="eyebrow">THE FUTURE OF PATIENT SUPPORT</span>
+      <h2>Let's make healthcare easier to reach.</h2>
+      <p>
+        Building a more connected experience for hospitals,
+        healthcare teams and the people they serve.
+      </p>
+      <a href="#home" class="primary-button">Back to top ↑</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#home" class="logo">
+      <span class="logo-icon">✚</span>
+      MediConnect <span class="logo-ai">AI</span>
+    </a>
+    <p>Supporting better connections between patients and care teams.</p>
+    <p class="copyright">© 2026 MediConnect AI · Project prototype</p>
+  </footer>
+
+</body>
+</html>
+
