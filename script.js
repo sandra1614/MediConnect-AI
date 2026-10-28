@@ -116,3 +116,64 @@ quickQuestions.forEach(function (button) {
 
 console.log("MediConnect AI demo chat is ready!");
 
+/* =================================
+   HOSPITAL PROFILE PREVIEW
+================================= */
+
+const hospitalSetupForm = document.getElementById("hospitalSetupForm");
+const hospitalProfileResult = document.getElementById("hospitalProfileResult");
+
+if (hospitalSetupForm && hospitalProfileResult) {
+  hospitalSetupForm.addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    const hospitalName = document.getElementById("hospitalName").value.trim();
+    const hospitalEmail = document.getElementById("hospitalEmail").value.trim();
+    const hospitalPhone = document.getElementById("hospitalPhone").value.trim();
+    const hospitalType = document.getElementById("hospitalType").value;
+
+    if (!hospitalName || !hospitalEmail || !hospitalPhone || !hospitalType) {
+      alert("Please complete all hospital profile fields.");
+      return;
+    }
+
+    // Build the preview safely.
+    hospitalProfileResult.replaceChildren();
+
+    const heading = document.createElement("h4");
+    heading.textContent = "✓ Hospital Profile Preview";
+
+    const name = document.createElement("p");
+    name.textContent = "Hospital name: " + hospitalName;
+
+    const email = document.createElement("p");
+    email.textContent = "Contact email: " + hospitalEmail;
+
+    const phone = document.createElement("p");
+    phone.textContent = "Phone number: " + hospitalPhone;
+
+    const type = document.createElement("p");
+    type.textContent = "Facility type: " + hospitalType;
+
+    const note = document.createElement("p");
+    note.className = "preview-note";
+    note.textContent =
+      "Preview only. This profile has not been registered or saved to a secure database.";
+
+    hospitalProfileResult.append(
+      heading,
+      name,
+      email,
+      phone,
+      type,
+      note
+    );
+
+    hospitalProfileResult.hidden = false;
+    hospitalProfileResult.scrollIntoView({
+      behavior: "smooth",
+      block: "nearest"
+    });
+  });
+}
+
